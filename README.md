@@ -1,84 +1,37 @@
 # Shiv Cosmic Energy Solutions
 
-Premium astrology and Vastu consultation website built with Next.js 15, featuring advanced animations, cosmic backgrounds, and immersive user experience.
+Welcome to the official repository for **Shiv Cosmic Energy Solutions**, a premium astrology and Vastu consultation platform.
 
-## Features
+## 🌟 Project Overview
+This website is designed with a traditional yet luxurious aesthetic, inspired by `vastukalp.com`, to reflect the premium nature of the services offered by Mr. Shivsharan Manshetti.
 
-- 🌟 **Immersive Design**: Cosmic particle background with Three.js
-- ✨ **Smooth Animations**: Framer Motion + Lenis smooth scrolling
-- 🎨 **Premium UI**: Glassmorphism effects and luxury aesthetics
-- 📱 **Fully Responsive**: Optimized for all devices
-- ⚡ **High Performance**: Optimized for speed and Lighthouse scores
+### Key Features
+- **Premium Design**: Gold, Brown, and Cream color palette matching traditional luxury.
+- **Service Showcases**: Janam Kundli, Astro Mapping™, Residential & Industrial Vastu.
+- **High Performance**: Optimized with Next.js, Lenis Smooth Scroll, and framer-motion animations.
+- **Responsive**: Fully optimized for Mobile, Tablet, and Desktop.
 
-## Tech Stack
-
+## 🛠 Tech Stack
 - **Framework**: Next.js 15 (App Router)
 - **Styling**: Tailwind CSS
-- **Animations**: Framer Motion, GSAP
-- **3D Graphics**: Three.js
-- **Smooth Scrolling**: Lenis
+- **Animations**: Framer Motion
+- **Scrolling**: Lenis
 - **Language**: TypeScript
 
-## Getting Started
+## 🚀 Getting Started
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Run Development Server**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Open in Browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## Project Structure
-
-```
-├── app/
-│   ├── layout.tsx          # Root layout with fonts
-│   ├── page.tsx            # Main landing page
-│   └── globals.css      # Global styles
-├── components/
-│   ├── sections/           # Page sections
-│   │   ├── Hero.tsx
-│   │   ├── VideoSection.tsx
-│   │   ├── KundliReport.tsx
-│   │   ├── Services.tsx
-│   │   ├── PremiumOfferings.tsx
-│   │   ├── Testimonials.tsx
-│   │   ├── Founder.tsx
-│   │   └── FinalCTA.tsx
-│   ├── ui/                 # Reusable UI components
-│   │   ├── Button.tsx
-│   │   └── Card.tsx
-│   ├── CosmicBackground.tsx
-│   ├── Navigation.tsx
-│   ├── Footer.tsx
-│   ├── SmoothScroll.tsx
-│   ├── ScrollProgress.tsx
-│   └── AnimatedSection.tsx
-├── lib/
-│   └── animations.ts       # Animation variants
-└── tailwind.config.ts      # Tailwind configuration
-```
-
-## Build for Production
+First, run the development server:
 
 ```bash
-npm run build
-npm start
+npm run dev
+# or
+yarn dev
 ```
 
-## Customization
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Colors**: Edit `tailwind.config.ts` cosmic and gold color values
-- **Fonts**: Modify font imports in `app/layout.tsx`
-- **Content**: Update section components in `components/sections/`
-- **Animations**: Adjust variants in `lib/animations.ts`
-
-## License
-
-All rights reserved © 2026 Shiv Cosmic Energy Solutions
+## 📞 Contact
+**Shiv Cosmic Energy Solutions**  
+BA IRIS, Baif Road, Wagholi, Pune  
+Phone: +91 7030127129  
+Email: info.shivcosmic@gmail.com
