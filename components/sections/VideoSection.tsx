@@ -81,7 +81,7 @@ export default function VideoSection() {
                         {isPlaying && (
                             <iframe
                                 className="w-full h-full absolute inset-0 z-10"
-                                src="https://www.youtube.com/embed/-7oALzHZES8?autoplay=1&modestbranding=1&rel=0&showinfo=0&color=white"
+                                src="https://www.youtube.com/embed/-7oALzHZES8?autoplay=1&rel=0&playsinline=1"
                                 title="Shiv Cosmic Energy Solutions"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
