@@ -47,7 +47,7 @@ export default function VideoSection() {
                     <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl glass-dark md:rotate-2 hover:rotate-0 transition-transform duration-700 ease-out border border-white/10">
                         <iframe
                             className="w-full h-full"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            src="https://www.youtube.com/embed/-7oALzHZES8"
                             title="Shiv Cosmic Energy Solutions"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
