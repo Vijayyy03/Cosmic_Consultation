@@ -19,27 +19,25 @@ export default function FinalCTA() {
                     className="text-center space-y-10"
                 >
                     {/* Heading */}
-                    <div className="space-y-6">
-                        <motion.h2
-                            variants={staggerItem}
-                            className="font-serif text-4xl md:text-6xl font-bold leading-tight text-cosmic-brown-900"
-                        >
-                            Your Birth Chart <br />
-                            <span className="italic relative inline-block">
-                                Already Holds the Answers
-                                <span className="absolute -bottom-2 left-0 w-full h-1 bg-cosmic-gold/30 rounded-full" />
-                            </span>
-                        </motion.h2>
+                    <motion.h2
+                        variants={staggerItem}
+                        className="font-serif text-4xl md:text-6xl font-bold leading-tight text-cosmic-brown-900 mb-6"
+                    >
+                        Your Birth Chart <br />
+                        <span className="italic relative inline-block">
+                            Already Holds the Answers
+                            <span className="absolute -bottom-2 left-0 w-full h-1 bg-cosmic-gold/30 rounded-full" />
+                        </span>
+                    </motion.h2>
 
-                        {/* Subheading */}
-                        <motion.p
-                            variants={staggerItem}
-                            className="text-lg md:text-xl text-cosmic-brown-700/80 max-w-2xl mx-auto font-medium leading-relaxed"
-                        >
-                            Take the first step towards cosmic alignment and unlock the success,
-                            harmony, and prosperity waiting for you.
-                        </motion.p>
-                    </div>
+                    {/* Subheading */}
+                    <motion.p
+                        variants={staggerItem}
+                        className="text-lg md:text-xl text-cosmic-brown-700/80 max-w-2xl mx-auto font-medium leading-relaxed"
+                    >
+                        Take the first step towards cosmic alignment and unlock the success,
+                        harmony, and prosperity waiting for you.
+                    </motion.p>
 
                     {/* CTA Buttons & Pricing */}
                     <motion.div
