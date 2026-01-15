@@ -21,8 +21,8 @@ export default function Home() {
 
             {/* All Sections */}
             <HeroSlider />
-            <VideoSection />
             <AboutCosmic />
+            <VideoSection />
             <ProductGrid />
             <ServicesGrid />
             <DirectionalVastu />
