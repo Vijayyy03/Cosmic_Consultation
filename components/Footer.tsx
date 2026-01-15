@@ -29,7 +29,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-vastukalp-brown-900 text-vastukalp-cream-100 pt-16 pb-6" id="contact">
+        <footer className="bg-cosmic-brown-900 text-cosmic-cream-100 pt-16 pb-6" id="contact">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Main Footer Grid */}
                 <motion.div
@@ -41,10 +41,10 @@ export default function Footer() {
                 >
                     {/* Brand & Address */}
                     <motion.div variants={staggerItem}>
-                        <h4 className="font-serif text-xl font-bold text-vastukalp-gold mb-4 uppercase tracking-wide">
+                        <h4 className="font-serif text-xl font-bold text-cosmic-gold mb-4 uppercase tracking-wide">
                             Shiv Cosmic Energy Solutions
                         </h4>
-                        <div className="text-sm space-y-4 text-vastukalp-cream-100/80 leading-relaxed">
+                        <div className="text-sm space-y-4 text-cosmic-cream-100/80 leading-relaxed">
                             <p>
                                 <strong>Office:</strong><br />
                                 BA IRIS, Baif Road, Wagholi,<br />
@@ -59,7 +59,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <motion.div variants={staggerItem}>
-                        <h4 className="font-serif text-xl font-bold text-vastukalp-gold mb-4 uppercase tracking-wide">
+                        <h4 className="font-serif text-xl font-bold text-cosmic-gold mb-4 uppercase tracking-wide">
                             Quick Links
                         </h4>
                         <ul className="space-y-2">
@@ -67,7 +67,7 @@ export default function Footer() {
                                 <li key={index}>
                                     <a
                                         href={link.href}
-                                        className="text-sm text-vastukalp-cream-100/80 hover:text-vastukalp-gold transition-colors"
+                                        className="text-sm text-cosmic-cream-100/80 hover:text-cosmic-gold transition-colors"
                                     >
                                         {link.name}
                                     </a>
@@ -78,14 +78,14 @@ export default function Footer() {
 
                     {/* Services */}
                     <motion.div variants={staggerItem}>
-                        <h4 className="font-serif text-xl font-bold text-vastukalp-gold mb-4 uppercase tracking-wide">
+                        <h4 className="font-serif text-xl font-bold text-cosmic-gold mb-4 uppercase tracking-wide">
                             Core Services
                         </h4>
                         <ul className="space-y-2">
                             {services.map((link, index) => (
                                 <li key={index}>
                                     <span
-                                        className="text-sm text-vastukalp-cream-100/80"
+                                        className="text-sm text-cosmic-cream-100/80"
                                     >
                                         {link}
                                     </span>
@@ -93,7 +93,7 @@ export default function Footer() {
                             ))}
                         </ul>
                         <div className="mt-6">
-                            <a href="tel:+917030127129" className="text-vastukalp-gold font-bold text-lg hover:underline">
+                            <a href="tel:+917030127129" className="text-cosmic-gold font-bold text-lg hover:underline">
                                 Call Now: +91 7030127129
                             </a>
                         </div>
@@ -101,7 +101,7 @@ export default function Footer() {
 
                     {/* Follow Us */}
                     <motion.div variants={staggerItem}>
-                        <h4 className="font-serif text-xl font-bold text-vastukalp-gold mb-4 uppercase tracking-wide">
+                        <h4 className="font-serif text-xl font-bold text-cosmic-gold mb-4 uppercase tracking-wide">
                             Follow Us
                         </h4>
                         <div className="flex gap-4">
@@ -128,9 +128,9 @@ export default function Footer() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="pt-8 border-t border-vastukalp-cream-100/10 text-center"
+                    className="pt-8 border-t border-cosmic-cream-100/10 text-center"
                 >
-                    <p className="text-sm text-vastukalp-cream-100/60">
+                    <p className="text-sm text-cosmic-cream-100/60">
                         &copy; {year} Shiv Cosmic Energy Solutions. All rights reserved.
                     </p>
                 </motion.div>

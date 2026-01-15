@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 import Button from "../ui/Button";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const services = [
     {
@@ -39,12 +40,102 @@ const services = [
 ];
 
 export default function ProductGrid() {
+    const [stars, setStars] = useState<{ id: number; style: React.CSSProperties }[]>([]);
+
+    useEffect(() => {
+        const generatedStars = [...Array(20)].map((_, i) => ({
+            id: i,
+            style: {
+                width: Math.random() > 0.5 ? "3px" : "2px",
+                height: Math.random() > 0.5 ? "3px" : "2px",
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+            } as React.CSSProperties,
+        }));
+        setStars(generatedStars);
+    }, []);
+
     return (
-        <section className="section-spacing bg-vastukalp-brown-900 bg-compass relative overflow-hidden" id="services">
-            {/* Background Pattern Overlay */}
-            <div className="absolute inset-0 opacity-5 pointer-events-none">
-                <div className="absolute top-10 right-10 w-64 h-64 border-4 border-vastukalp-gold rounded-full" />
-                <div className="absolute bottom-10 left-10 w-96 h-96 border-2 border-vastukalp-gold rounded-full" />
+        <section className="section-spacing bg-cosmic-brown-900 bg-compass relative overflow-hidden" id="services">
+            {/* Animated Background Elements */}
+            {/* Animated Background Elements - Constellations & Shooting Stars */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0">
+                {/* Background Gradient Pulse */}
+                <motion.div
+                    animate={{ opacity: [0.05, 0.15, 0.05] }}
+                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute inset-0 bg-radial-gradient from-cosmic-gold/10 to-transparent"
+                />
+
+                {/* Floating Constellation - Libra Style */}
+                <motion.div
+                    initial={{ opacity: 0.15 }}
+                    animate={{
+                        y: [-10, 10, -10],
+                        opacity: [0.15, 0.25, 0.15]
+                    }}
+                    transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-20 left-10 w-64 h-64 opacity-20"
+                >
+                    <svg className="w-full h-full stroke-cosmic-gold fill-cosmic-gold" viewBox="0 0 100 100">
+                        <circle cx="20" cy="80" r="1.5" />
+                        <circle cx="50" cy="50" r="1.5" />
+                        <circle cx="80" cy="20" r="1.5" />
+                        <path d="M20 80 L50 50 L80 20" strokeWidth="0.5" fill="none" strokeDasharray="4 4" />
+                    </svg>
+                </motion.div>
+
+                {/* Floating Constellation - Cassiopeia Style */}
+                <motion.div
+                    initial={{ opacity: 0.15 }}
+                    animate={{
+                        y: [10, -10, 10],
+                        opacity: [0.15, 0.25, 0.15]
+                    }}
+                    transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                    className="absolute bottom-20 right-10 w-80 h-80 opacity-20"
+                >
+                    <svg className="w-full h-full stroke-cosmic-gold fill-cosmic-gold" viewBox="0 0 100 100">
+                        <circle cx="10" cy="30" r="1.5" />
+                        <circle cx="30" cy="70" r="1.5" />
+                        <circle cx="50" cy="50" r="1.5" />
+                        <circle cx="70" cy="70" r="1.5" />
+                        <circle cx="90" cy="30" r="1.5" />
+                        <path d="M10 30 L30 70 L50 50 L70 70 L90 30" strokeWidth="0.5" fill="none" strokeDasharray="4 4" />
+                    </svg>
+                </motion.div>
+
+                {/* Subtle Twinkling Stars */}
+                {stars.map((star) => (
+                    <motion.div
+                        key={`star-${star.id}`}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{
+                            opacity: [0, 0.8, 0],
+                            scale: [0, 1, 0],
+                        }}
+                        transition={{
+                            duration: 2 + Math.random() * 3,
+                            repeat: Infinity,
+                            delay: Math.random() * 5,
+                            ease: "easeInOut"
+                        }}
+                        className="absolute bg-cosmic-gold rounded-full shadow-[0_0_2px_#C5A059]"
+                        style={star.style}
+                    />
+                ))}
+
+                {/* Shooting Star */}
+                <motion.div
+                    initial={{ left: "-10%", top: "20%", opacity: 0 }}
+                    animate={{
+                        left: ["-10%", "120%"],
+                        top: ["20%", "40%"],
+                        opacity: [0, 1, 0, 0]
+                    }}
+                    transition={{ duration: 7, repeat: Infinity, delay: 5, ease: "linear" }}
+                    className="absolute w-32 h-[1px] bg-gradient-to-r from-transparent via-cosmic-gold to-transparent opacity-60"
+                />
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -55,10 +146,10 @@ export default function ProductGrid() {
                     viewport={{ once: true, margin: "-100px" }}
                     className="text-center mb-12"
                 >
-                    <h2 className="heading-vastukalp text-4xl md:text-5xl mb-3">
+                    <h2 className="heading-cosmic text-4xl md:text-5xl mb-3">
                         OUR CORE SERVICES
                     </h2>
-                    <p className="text-vastukalp-gold text-xl font-serif">UNLOCK COSMIC WISDOM</p>
+                    <p className="text-cosmic-gold text-xl font-serif">UNLOCK COSMIC WISDOM</p>
                 </motion.div>
 
                 {/* Product Grid - Centered & Responsive */}
@@ -73,7 +164,7 @@ export default function ProductGrid() {
                         <motion.div
                             key={index}
                             variants={staggerItem}
-                            className="bg-vastukalp-cream-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group flex flex-col will-change-transform"
+                            className="bg-cosmic-cream-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group flex flex-col will-change-transform"
                         >
                             {/* Service Image */}
                             <div className="relative h-48 overflow-hidden bg-gray-200">
@@ -89,15 +180,15 @@ export default function ProductGrid() {
                             {/* Service Info */}
                             <div className="p-5 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 className="text-lg font-serif font-bold text-vastukalp-brown-900 mb-2 uppercase min-h-[3.5rem] flex items-center justify-center">
+                                    <h3 className="text-lg font-serif font-bold text-cosmic-brown-900 mb-2 uppercase min-h-[3.5rem] flex items-center justify-center">
                                         {service.title}
                                     </h3>
-                                    <p className="text-vastukalp-brown-700 text-xs mb-4 line-clamp-4">
+                                    <p className="text-cosmic-brown-700 text-xs mb-4 line-clamp-4">
                                         {service.description}
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="text-xl font-bold text-vastukalp-gold mb-3">
+                                    <p className="text-xl font-bold text-cosmic-gold mb-3">
                                         {service.price}
                                     </p>
                                     <Button href="#contact" className="w-full text-xs py-2">

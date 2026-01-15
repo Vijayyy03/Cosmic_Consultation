@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Cinzel, Lato } from "next/font/google";
+import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/ScrollProgress";
 
-const cinzel = Cinzel({
+const playfair = Playfair_Display({
     subsets: ["latin"],
-    weight: ["400", "600", "700"],
-    variable: "--font-cinzel",
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-serif", // Headings
     display: "swap",
 });
 
-const lato = Lato({
+const montserrat = Montserrat({
     subsets: ["latin"],
-    weight: ["300", "400", "700", "900"],
-    variable: "--font-lato",
+    weight: ["300", "400", "500", "600", "700"],
+    variable: "--font-sans", // Body
     display: "swap",
 });
 
@@ -30,7 +30,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${cinzel.variable} ${lato.variable}`}>
+        <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
+
             <body className="font-sans antialiased">
                 <SmoothScroll>
                     <ScrollProgress />

@@ -25,10 +25,10 @@ export default function Testimonials() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <section className="section-spacing bg-vastukalp-brown-900 relative overflow-hidden">
+        <section className="section-spacing bg-cosmic-brown-900 relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-20 right-10 w-96 h-96 border-2 border-vastukalp-gold rounded-full" />
+                <div className="absolute top-20 right-10 w-96 h-96 border-2 border-cosmic-gold rounded-full" />
             </div>
 
             <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -39,10 +39,10 @@ export default function Testimonials() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="heading-vastukalp text-4xl md:text-5xl mb-4 text-vastukalp-gold">
+                    <h2 className="heading-cosmic text-4xl md:text-5xl mb-4 text-cosmic-gold">
                         TESTIMONIALS
                     </h2>
-                    <p className="text-vastukalp-cream-100/80 text-lg">
+                    <p className="text-cosmic-cream-100/80 text-lg">
                         What our satisfied clients say
                     </p>
                 </motion.div>
@@ -54,18 +54,18 @@ export default function Testimonials() {
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-100px" }}
                             transition={{ delay: index * 0.2 }}
-                            className="bg-vastukalp-cream-100 rounded-lg p-8 shadow-xl"
+                            className="bg-cosmic-cream-100 rounded-lg p-8 shadow-xl"
                         >
-                            <p className="text-vastukalp-brown-800 leading-relaxed mb-6 text-lg italic">
+                            <p className="text-cosmic-brown-800 leading-relaxed mb-6 text-lg italic">
                                 "{testimonial.text}"
                             </p>
-                            <div className="border-t border-vastukalp-gold/20 pt-4">
-                                <h4 className="font-serif font-bold text-vastukalp-gold text-xl mb-1">
+                            <div className="border-t border-cosmic-gold/20 pt-4">
+                                <h4 className="font-serif font-bold text-cosmic-gold text-xl mb-1">
                                     {testimonial.name}
                                 </h4>
-                                <p className="text-vastukalp-brown-700 text-sm">{testimonial.title}</p>
+                                <p className="text-cosmic-brown-700 text-sm">{testimonial.title}</p>
                             </div>
                         </motion.div>
                     ))}

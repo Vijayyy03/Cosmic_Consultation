@@ -58,7 +58,7 @@ export default function HeroSlider() {
                     className="absolute inset-0"
                 >
                     {/* Background Image */}
-                    <div className="absolute inset-0 bg-vastukalp-brown-900">
+                    <div className="absolute inset-0 bg-cosmic-brown-900">
                         <Image
                             src={slides[currentSlide].image}
                             alt={slides[currentSlide].title}
@@ -70,7 +70,7 @@ export default function HeroSlider() {
                     </div>
 
                     {/* Dark Overlay */}
-                    <div className="absolute inset-0 bg-vastukalp-brown-900/60" />
+                    <div className="absolute inset-0 bg-cosmic-brown-900/60" />
 
                     {/* Content */}
                     <div className="relative h-full flex items-center justify-center text-center">
@@ -80,10 +80,10 @@ export default function HeroSlider() {
                             transition={{ delay: 0.3, duration: 0.6 }}
                             className="max-w-4xl px-6"
                         >
-                            <h1 className="heading-vastukalp text-3xl md:text-5xl lg:text-7xl mb-6 text-shadow-gold leading-tight">
+                            <h1 className="heading-cosmic text-3xl md:text-5xl lg:text-7xl mb-6 text-shadow-gold leading-tight">
                                 {slides[currentSlide].title}
                             </h1>
-                            <p className="text-vastukalp-cream-100 text-xl md:text-2xl font-serif tracking-wide mb-8">
+                            <p className="text-cosmic-cream-100 text-xl md:text-2xl font-serif tracking-wide mb-8">
                                 {slides[currentSlide].subtitle}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
@@ -98,7 +98,7 @@ export default function HeroSlider() {
             {/* Navigation Arrows */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-vastukalp-gold/80 hover:bg-vastukalp-gold text-white p-3 md:p-4 rounded-full transition-all z-20"
+                className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-cosmic-gold/80 hover:bg-cosmic-gold text-white p-3 md:p-4 rounded-full transition-all z-20"
                 aria-label="Previous slide"
             >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ export default function HeroSlider() {
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-vastukalp-gold/80 hover:bg-vastukalp-gold text-white p-3 md:p-4 rounded-full transition-all z-20"
+                className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-cosmic-gold/80 hover:bg-cosmic-gold text-white p-3 md:p-4 rounded-full transition-all z-20"
                 aria-label="Next slide"
             >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,8 +122,8 @@ export default function HeroSlider() {
                         key={index}
                         onClick={() => goToSlide(index)}
                         className={`w-3 h-3 rounded-full transition-all ${currentSlide === index
-                                ? "bg-vastukalp-gold w-8"
-                                : "bg-white/50 hover:bg-white/80"
+                            ? "bg-cosmic-gold w-8"
+                            : "bg-white/50 hover:bg-white/80"
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />

@@ -3,7 +3,7 @@
 Welcome to the official repository for **Shiv Cosmic Energy Solutions**, a premium astrology and Vastu consultation platform.
 
 ## 🌟 Project Overview
-This website is designed with a traditional yet luxurious aesthetic, inspired by `vastukalp.com`, to reflect the premium nature of the services offered by Mr. Shivsharan Manshetti.
+This website is designed with a traditional yet luxurious aesthetic, inspired by `cosmic.com`, to reflect the premium nature of the services offered by Mr. Shivsharan Manshetti.
 
 ### Key Features
 - **Premium Design**: Gold, Brown, and Cream color palette matching traditional luxury.

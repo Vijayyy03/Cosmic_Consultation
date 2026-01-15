@@ -9,24 +9,24 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                vastukalp: {
-                    gold: "#BC9350",
+                cosmic: {
+                    gold: "#C5A059", // Antique Bronze
                     brown: {
-                        900: "#2B1B17",
-                        800: "#3E2F2B",
-                        700: "#524339",
-                        600: "#6B564C",
+                        900: "#1C160F", // Deep Espresso (Darker/Richer than #2B1B17)
+                        800: "#32221A",
+                        700: "#4D362C",
+                        600: "#6B4C3E",
                     },
                     cream: {
-                        100: "#FEF9E1",
-                        200: "#FAF8F3",
-                        300: "#F5F0E5",
+                        100: "#FDFBF7", // Cleaner Cream (Less yellow)
+                        200: "#F5F2EA", // Subtle warmth
+                        300: "#EBE5D9",
                     },
                 },
             },
             fontFamily: {
-                serif: ["var(--font-cinzel)", "serif"],
-                sans: ["var(--font-lato)", "sans-serif"],
+                serif: ["var(--font-serif)", "serif"], // Bodoni Moda
+                sans: ["var(--font-sans)", "sans-serif"], // Montserrat
             },
             backgroundImage: {
                 "cream-gradient": "linear-gradient(180deg, #FEF9E1 0%, #FAF8F3 100%)",

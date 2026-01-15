@@ -12,7 +12,7 @@ export default function ScrollProgress() {
 
     return (
         <motion.div
-            className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-vastukalp-gold via-vastukalp-gold to-vastukalp-gold origin-left z-50"
+            className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-cosmic-gold via-cosmic-gold to-cosmic-gold origin-left z-50"
             style={{ scaleX }}
         />
     );

@@ -36,7 +36,7 @@ const targets = [
 
 export default function ServicesGrid() {
     return (
-        <section className="section-spacing bg-vastukalp-cream-200" id="why-choose-us">
+        <section className="section-spacing bg-cosmic-cream-200" id="why-choose-us">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Who We Help */}
@@ -47,7 +47,7 @@ export default function ServicesGrid() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="text-center mb-12"
                     >
-                        <h2 className="heading-vastukalp text-3xl md:text-4xl mb-4">
+                        <h2 className="heading-cosmic text-3xl md:text-4xl mb-4">
                             WHO WE HELP
                         </h2>
                     </motion.div>
@@ -56,13 +56,13 @@ export default function ServicesGrid() {
                         variants={staggerContainer}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, margin: "-50px" }}
+                        viewport={{ once: true, margin: "-100px" }}
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
                     >
                         {targets.map((item, idx) => (
-                            <motion.div key={idx} variants={staggerItem} className="bg-white p-6 rounded-lg shadow-md text-center border-b-4 border-vastukalp-gold will-change-transform">
-                                <h3 className="font-serif text-lg font-bold text-vastukalp-brown-900 mb-2">{item.label}</h3>
-                                <p className="text-sm text-vastukalp-brown-700">{item.desc}</p>
+                            <motion.div key={idx} variants={staggerItem} className="bg-white p-6 rounded-lg shadow-md text-center border-b-4 border-cosmic-gold will-change-transform">
+                                <h3 className="font-serif text-lg font-bold text-cosmic-brown-900 mb-2">{item.label}</h3>
+                                <p className="text-sm text-cosmic-brown-700">{item.desc}</p>
                             </motion.div>
                         ))}
                     </motion.div>
@@ -77,7 +77,7 @@ export default function ServicesGrid() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="text-center mb-12"
                     >
-                        <h2 className="heading-vastukalp text-3xl md:text-4xl mb-4">
+                        <h2 className="heading-cosmic text-3xl md:text-4xl mb-4">
                             WHY CHOOSE SHIV COSMIC?
                         </h2>
                     </motion.div>
@@ -86,7 +86,7 @@ export default function ServicesGrid() {
                         variants={staggerContainer}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, margin: "-50px" }}
+                        viewport={{ once: true, margin: "-100px" }}
                         className="grid md:grid-cols-4 gap-8"
                     >
                         {benefits.map((benefit, index) => (
@@ -96,10 +96,10 @@ export default function ServicesGrid() {
                                 className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl text-center group transition-all hover:-translate-y-1 will-change-transform"
                             >
                                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">{benefit.icon}</div>
-                                <h3 className="heading-vastukalp text-sm mb-3 font-bold">
+                                <h3 className="heading-cosmic text-sm mb-3 font-bold">
                                     {benefit.title}
                                 </h3>
-                                <p className="text-vastukalp-brown-800 text-sm leading-relaxed">
+                                <p className="text-cosmic-brown-800 text-sm leading-relaxed">
                                     {benefit.description}
                                 </p>
                             </motion.div>

@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSlider from "@/components/sections/HeroSlider";
-import AboutVastukalp from "@/components/sections/AboutVastukalp";
+import AboutCosmic from "@/components/sections/AboutCosmic";
 import ProductGrid from "@/components/sections/ProductGrid";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import DirectionalVastu from "@/components/sections/DirectionalVastu";
@@ -19,7 +19,7 @@ export default function Home() {
 
             {/* All Sections */}
             <HeroSlider />
-            <AboutVastukalp />
+            <AboutCosmic />
             <ProductGrid />
             <ServicesGrid />
             <DirectionalVastu />

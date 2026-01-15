@@ -20,9 +20,9 @@ export default function Button({
     const baseStyles = "inline-block px-8 py-3 rounded font-bold text-sm uppercase tracking-wider transition-all duration-300";
 
     const variantStyles = {
-        primary: "bg-vastukalp-gold hover:bg-vastukalp-gold/90 text-white shadow-lg hover:shadow-xl",
-        secondary: "bg-vastukalp-brown-900 hover:bg-vastukalp-brown-800 text-vastukalp-cream-100",
-        outline: "border-2 border-vastukalp-gold text-vastukalp-gold hover:bg-vastukalp-gold hover:text-white",
+        primary: "bg-cosmic-gold hover:bg-cosmic-gold/90 text-white shadow-lg hover:shadow-xl",
+        secondary: "bg-cosmic-brown-900 hover:bg-cosmic-brown-800 text-cosmic-cream-100",
+        outline: "border-2 border-cosmic-gold text-cosmic-gold hover:bg-cosmic-gold hover:text-white",
     };
 
     const Component = href ? "a" : "button";
