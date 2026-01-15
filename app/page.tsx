@@ -21,11 +21,11 @@ export default function Home() {
 
             {/* All Sections */}
             <HeroSlider />
+            <VideoSection />
             <AboutCosmic />
             <ProductGrid />
             <ServicesGrid />
             <DirectionalVastu />
-            <VideoSection />
             <Testimonials />
             <FinalCTA />
 
