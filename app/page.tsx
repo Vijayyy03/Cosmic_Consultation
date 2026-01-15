@@ -6,6 +6,7 @@ import ServicesGrid from "@/components/sections/ServicesGrid";
 import DirectionalVastu from "@/components/sections/DirectionalVastu";
 import Testimonials from "@/components/sections/Testimonials";
 import VideoSection from "@/components/sections/VideoSection";
+import WhoWeHelp from "@/components/sections/WhoWeHelp";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -23,6 +24,7 @@ export default function Home() {
             <HeroSlider />
             <AboutCosmic />
             <VideoSection />
+            <WhoWeHelp />
             <ProductGrid />
             <ServicesGrid />
             <DirectionalVastu />
