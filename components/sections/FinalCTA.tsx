@@ -41,18 +41,25 @@ export default function FinalCTA() {
                     {/* CTA Buttons */}
                     <motion.div
                         variants={staggerItem}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+                        className="flex flex-col items-center gap-6 pt-4"
                     >
-                        <Button variant="primary" icon={<span>→</span>}>
-                            Book Consultation
-                        </Button>
-                        <Button
-                            href="https://wa.me/919999999999"
-                            variant="secondary"
-                            icon={<span>💬</span>}
-                        >
-                            WhatsApp Now
-                        </Button>
+                        <div className="flex flex-col items-center gap-2">
+                            <Button href="#consult" variant="primary" className="text-lg px-8 py-4 flex items-center justify-center gap-2">
+                                YES I AM READY FOR ONE - ONE Consultation <span className="text-xl">→</span>
+                            </Button>
+                            <div className="flex items-center gap-3 text-white">
+                                <span className="text-lg">1hr : one to one :</span>
+                                <span className="text-2xl font-bold text-cosmic-gold">₹999</span>
+                                <span className="text-lg opacity-50 line-through">₹2000</span>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col items-center gap-2 mt-4 text-white/80">
+                            <p className="font-medium">If you have any query you can call on the below no 👇</p>
+                            <a href="tel:+919999999999" className="text-xl font-bold hover:text-cosmic-gold transition-colors flex items-center gap-2">
+                                📞 +91 99999 99999
+                            </a>
+                        </div>
                     </motion.div>
 
                     {/* Trust Badge */}

@@ -63,6 +63,25 @@ export default function AboutFounder() {
                             FOUNDER | EXPERT ASTROLOGER | VASTU CONSULTANT
                         </motion.p>
 
+                        {/* Authority Lines */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.5 }}
+                            className="flex flex-wrap gap-4 mb-8 text-sm md:text-base"
+                        >
+                            <div className="bg-cosmic-gold/10 px-4 py-2 rounded-full border border-cosmic-gold/20 text-cosmic-brown-800 font-semibold">
+                                ⭐ Rating 4.9/5
+                            </div>
+                            <div className="bg-cosmic-gold/10 px-4 py-2 rounded-full border border-cosmic-gold/20 text-cosmic-brown-800 font-semibold">
+                                👥 1000+ people personally guided
+                            </div>
+                            <div className="bg-cosmic-gold/10 px-4 py-2 rounded-full border border-cosmic-gold/20 text-cosmic-brown-800 font-semibold">
+                                🤝 Trusted by professionals & business owners
+                            </div>
+                        </motion.div>
+
                         <motion.div
                             className="space-y-4 text-cosmic-brown-800 leading-relaxed text-lg"
                             initial="hidden"
