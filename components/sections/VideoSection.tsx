@@ -6,7 +6,7 @@ export default function VideoSection() {
     return (
         <AnimatedSection className="py-20 px-6">
             <div className="max-w-5xl mx-auto">
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-center mb-6 text-gold-500">
+                <h2 className="heading-cosmic text-4xl md:text-5xl lg:text-6xl text-center mb-6 text-cosmic-gold">
                     See How We Transform Lives
                 </h2>
                 <p className="text-center text-white/70 text-lg mb-12 max-w-3xl mx-auto">

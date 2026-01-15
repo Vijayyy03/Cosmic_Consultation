@@ -45,10 +45,13 @@ export default function Testimonials() {
                     <p className="text-cosmic-cream-100/80 text-lg">
                         What our satisfied clients say
                     </p>
-                    <div className="mt-6 flex justify-center">
-                        <div className="bg-cosmic-gold/20 px-6 py-2 rounded-full border border-cosmic-gold text-cosmic-gold font-bold text-lg flex items-center gap-2">
-                            ⭐ Overall Rating 4.9/5
+                    <div className="mt-8 mb-4">
+                        <div className="font-serif text-2xl md:text-3xl text-cosmic-gold bg-clip-text">
+                            ★★★★★
                         </div>
+                        <p className="text-cosmic-cream-200/80 font-serif tracking-wide mt-2">
+                            Overall Rating 4.9/5
+                        </p>
                     </div>
                 </motion.div>
 

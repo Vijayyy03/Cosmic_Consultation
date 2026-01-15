@@ -69,16 +69,19 @@ export default function AboutFounder() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.5 }}
-                            className="flex flex-wrap gap-4 mb-8 text-sm md:text-base"
+                            className="flex flex-col md:flex-row flex-wrap gap-x-6 gap-y-2 mb-8 text-lg font-serif text-cosmic-brown-800"
                         >
-                            <div className="bg-cosmic-gold/10 px-4 py-2 rounded-full border border-cosmic-gold/20 text-cosmic-brown-800 font-semibold">
-                                ⭐ Rating 4.9/5
+                            <div className="flex items-center gap-2">
+                                <span className="text-cosmic-gold text-xl">★</span>
+                                <span className="font-semibold">Rating 4.9/5</span>
                             </div>
-                            <div className="bg-cosmic-gold/10 px-4 py-2 rounded-full border border-cosmic-gold/20 text-cosmic-brown-800 font-semibold">
-                                👥 1000+ people personally guided
+                            <div className="hidden md:block text-cosmic-gold/40">|</div>
+                            <div className="flex items-center gap-2">
+                                <span className="font-semibold">1000+</span> people personally guided
                             </div>
-                            <div className="bg-cosmic-gold/10 px-4 py-2 rounded-full border border-cosmic-gold/20 text-cosmic-brown-800 font-semibold">
-                                🤝 Trusted by professionals & business owners
+                            <div className="hidden md:block text-cosmic-gold/40">|</div>
+                            <div className="italic text-cosmic-brown-700">
+                                Trusted by professionals & business owners
                             </div>
                         </motion.div>
 
